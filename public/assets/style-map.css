@@ -1,0 +1,41 @@
+body{
+    background: #fff;
+}
+img {
+    height: 82%;
+    width: 100%
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 300px 100px;
+    grid-gap: 4px;
+    grid-template-areas: 
+        "mb mb mb mb"
+        "i i i r"
+}
+#mapid{ height: 300px;}
+.map-box {
+    height: 300px;
+    background: #bdc3c7;
+    grid-area: mb;
+}
+.image {
+    background: #f5f6fa;
+    grid-area: i;
+    height: 350px;
+}
+.review {
+    background: #f5f6fa;
+    grid-area: r;
+    height: 350px;
+    color: #333;
+}
+p {
+    padding-left: 5px;
+}
+
+h3{
+    padding-top: 5px;
+    padding-left: 5px;
+}
